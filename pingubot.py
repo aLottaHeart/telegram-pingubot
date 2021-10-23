@@ -38,7 +38,7 @@ def pingu_command(update: Update, context: CallbackContext) -> None:
     bot = telegram.Bot(token)
     
     try:
-        with open('Spin_To_win.txt', encoding="utf8") as f:
+        with open('Spin_To_Win.txt', encoding="utf8") as f:
             lines = f.readlines()
 
         p = randrange(len(lines)-10)
